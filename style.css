@@ -1,0 +1,176 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Main Content ===== */
+main {
+    padding: 20px;
+}
+
+/* ===== Sections ===== */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* ===== Portfolio Section ===== */
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* ===== Tablet Screens ===== */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* ===== Mobile Screens ===== */
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    article img {
+        max-width: 100%;
+    }
+}
+
+/* ===== Form Styling ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Focus state (accessibility) */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #1f3c88;
+    box-shadow: 0 0 5px rgba(31, 60, 136, 0.4);
+}
+
+/* Submit Button */
+button {
+    margin-top: 20px;
+    background-color: #1f3c88;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover & Active states */
+button:hover {
+    background-color: #16306b;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for icons */
+.social-icons a:hover {
+    color: #ffdd57;
+    transform: scale(1.2);
+}
+@media (max-width: 480px) {
+    form {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
